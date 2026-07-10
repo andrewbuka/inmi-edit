@@ -1,4 +1,4 @@
-const prodCountBasket = document.querySelector('.count-prod')
+const prodCountsBasket = document.querySelectorAll('.count-prod')
 const allProdBasket = document.querySelector('.t-body-basket')
 const emptyBasket = document.querySelector('.empty-basket')
 const basketFull = document.querySelector('.tttt')
@@ -64,8 +64,10 @@ const setCartCountBasket = (products) => {
         sum = sum + +prod.count*(+prod.price)
     })
 
-    if (prodCountBasket) {
-        prodCountBasket.textContent = count
+    if (prodCountsBasket.length) {
+        prodCountsBasket.forEach(prodCountBasket => {
+            prodCountBasket.textContent = count
+        })
     }
 
     if (subtotalSum) {

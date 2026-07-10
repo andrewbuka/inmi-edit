@@ -134,9 +134,9 @@
 
 	function scrollWindow() {
 		if ($(window).scrollTop() > 500) {
-			$('.to-top').addClass('active');
+			$('.to-top, .floating-cart').addClass('active');
 		} else {
-			$('.to-top').removeClass('active');
+			$('.to-top, .floating-cart').removeClass('active');
 		}
 	}
 
