@@ -1223,8 +1223,19 @@
     margin-top: 12px;
 }
 
-.fiz-product-card .add-to-card-input {
+.fiz-product-card .refresh-prod {
+    flex: 0 0 44px;
+    border: 0;
     border-radius: 999px 0 0 999px;
+    background: #202b40;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.fiz-product-card .add-to-card-input {
+    border-radius: 0;
 }
 
 .fiz-product-card .btn-to-card {

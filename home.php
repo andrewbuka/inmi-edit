@@ -175,6 +175,7 @@
 										</span>
 
 										<div class="add-to-card-box none">
+											<button type="button" class="refresh-prod" aria-label="Вернуться к кнопке Купить">←</button>
 											<input min="1" type="number" class="add-to-card-input" value="1">
 											<div class="btn-to-card">Добавить в корзину</div>
 										</div>
