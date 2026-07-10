@@ -149,7 +149,9 @@ const onBuyClick = () => {
             const product = event.target.closest('.product-item')
             
             const addToCardBox = product.querySelector('.add-to-card-box');
+            const buyBtn = product.querySelector('.btn-buy');
 
+            buyBtn.classList.add('none')
             addToCardBox.classList.remove('none')
         })
     })
