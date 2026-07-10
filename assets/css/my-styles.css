@@ -3704,8 +3704,8 @@
 
 .header-yur-hint {
     position: absolute;
-    left: 50%;
-    bottom: calc(100% + 4px);
+    left: 35%;
+    bottom: calc(79% + 4px);
     width: 108px;
     height: 50px;
     color: rgba(36, 110, 73, 0.72);

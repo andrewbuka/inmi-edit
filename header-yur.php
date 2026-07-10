@@ -74,7 +74,6 @@
 						<li>
 							<a href="<?php echo get_page_link(8); ?>">Главная</a>							
 						</li>
-						<li><a target="_blank" href="https://mbio.bas-net.by/">Сайт Института</a></li>
 						<li><a href="<?php echo get_page_link(8); ?>#fiz-prod">физ. лица</a></li>
 						<li><a href="yur-prod.html"><strong>Препараты для юр. лиц</strong></a></li>
 
@@ -84,6 +83,7 @@
 							
 						</li> -->
 						<li><a href="<?php echo get_page_link(8); ?>#contacts">Контакты</a></li>
+						<li><a target="_blank" href="https://mbio.bas-net.by/">Сайт Института</a></li>
 					</ul>
 				</nav>
 			</div>

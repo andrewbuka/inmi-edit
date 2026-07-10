@@ -66,7 +66,6 @@ $inmi_is_main_page    = ( is_front_page() || is_home() || is_page( 8 ) ) && ! $i
 						<li>
 							<a class="<?php echo $inmi_is_main_page ? 'header-nav-active' : ''; ?>" href="<?php echo get_page_link(8); ?>">Главная</a>
 						</li>
-						<li><a target="_blank" href="https://mbio.bas-net.by/">Сайт Института</a></li>
 						<li><a class="<?php echo $inmi_is_main_page ? 'header-nav-active' : ''; ?>" href="<?php echo get_page_link(8); ?>#fiz-prod">физ. лица</a></li>
 						<li class="header-yur-nav-item">
 							<?php if ( $inmi_is_main_page ) : ?>
@@ -81,6 +80,7 @@ $inmi_is_main_page    = ( is_front_page() || is_home() || is_page( 8 ) ) && ! $i
 							<a class="<?php echo $inmi_is_yur_page ? 'header-nav-active' : ''; ?>" href="http://inmi/yur-page/"><strong>Препараты для юр. лиц</strong></a>
 						</li>
 						<li><a href="<?php echo get_page_link(8); ?>#contacts">Контакты</a></li>
+						<li><a target="_blank" href="https://mbio.bas-net.by/">Сайт Института</a></li>
 					</ul>
 				</nav>
 			</div>
