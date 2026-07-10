@@ -3688,3 +3688,70 @@
 .fiz-product-card .in-basket-p__clear:hover {
     background: rgba(32, 43, 64, .2);
 }
+
+/* Header navigation state and quiet hint for legal entities */
+.nav-list > li > a.header-nav-active {
+    border: 1px solid rgba(36, 110, 73, 0.7);
+    border-radius: 999px;
+    padding: 8px 14px;
+    color: #246e49;
+    background: rgba(36, 110, 73, 0.06);
+}
+
+.header-yur-nav-item {
+    position: relative;
+}
+
+.header-yur-hint {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 4px);
+    width: 128px;
+    height: 58px;
+    color: rgba(36, 110, 73, 0.72);
+    pointer-events: none;
+    transform: translateX(-50%);
+    animation: header-yur-hint-float 4.8s ease-in-out infinite;
+}
+
+.header-yur-hint__text {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+
+.header-yur-hint__arrow {
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+}
+
+@keyframes header-yur-hint-float {
+    0%, 100% {
+        opacity: 0.62;
+        transform: translate(-50%, 0) rotate(-1deg);
+    }
+    50% {
+        opacity: 0.9;
+        transform: translate(-50%, -4px) rotate(1deg);
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-yur-hint {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-list > li > a.header-nav-active {
+        display: inline-block;
+        padding: 7px 12px;
+    }
+}
