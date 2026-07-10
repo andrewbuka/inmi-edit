@@ -251,7 +251,6 @@
 
 		.yur-calc-choice {
 			display: flex;
-			align-items: flex-start;
 			gap: 12px;
 			padding: 14px 15px;
 			border: 1px solid #e3e8f0;
@@ -300,7 +299,6 @@
 		.yur-calc-field input,
 		.yur-calc-field select,
 		.yur-calc-field textarea {
-			width: 100%;
 			border: 1px solid #dbe2ec;
 			border-radius: 16px;
 			background: #f8fafc;
