@@ -164,7 +164,15 @@
 										<div class="btn btn-buy"><span>Купить</span></div>
 										
 
-										<span class="in-basket-p none">В корзине <span  class="in-basket-span">1</span> шт.</span>
+										<span class="in-basket-p none">
+											<span class="in-basket-p__label">В корзине</span>
+											<span class="in-basket-p__controls" aria-label="Управление количеством товара в корзине">
+												<button type="button" class="in-basket-p__button in-basket-p__minus" aria-label="Уменьшить количество">−</button>
+												<span class="in-basket-p__count"><span class="in-basket-span">1</span> шт.</span>
+												<button type="button" class="in-basket-p__button in-basket-p__plus" aria-label="Увеличить количество">+</button>
+											</span>
+											<button type="button" class="in-basket-p__clear">Очистить</button>
+										</span>
 
 										<div class="add-to-card-box none">
 											<input min="1" type="number" class="add-to-card-input" value="1">

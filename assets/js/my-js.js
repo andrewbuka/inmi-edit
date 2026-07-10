@@ -52,22 +52,90 @@ const addProductToOrder = (productId, count) => {
         forAsync.push(productForOrder)
     }
 
-    localStorage.setItem("order", JSON.stringify(forAsync));
-    setCartCount(forAsync);
+    saveOrder();
 
     return productForOrder
 }
 
+const saveOrder = () => {
+    if (forAsync.length) {
+        localStorage.setItem("order", JSON.stringify(forAsync));
+    } else {
+        localStorage.removeItem("order");
+    }
+
+    setCartCount(forAsync);
+}
+
+const getProductCard = (productId) => {
+    return Array.from(card).find(item => {
+        const product = item.querySelector('.product-item')
+
+        return product && product.getAttribute('id') === productId
+    })
+}
+
+const getProductOrderItem = (productId) => forAsync.find(item => item.id === productId)
+
+const setProductCardState = (productId) => {
+    const cardItem = getProductCard(productId)
+
+    if (!cardItem) {
+        return
+    }
+
+    const orderItem = getProductOrderItem(productId)
+    const addToBasket = cardItem.querySelector('.btn-buy')
+    const addToCardBox = cardItem.querySelector('.add-to-card-box')
+    const inBasketP = cardItem.querySelector('.in-basket-p')
+    const inBasketSpan = cardItem.querySelector('.in-basket-span')
+    const countInput = cardItem.querySelector('.add-to-card-input')
+
+    if (orderItem) {
+        addToBasket.classList.add('none');
+        addToCardBox.classList.add('none');
+        inBasketP.classList.remove('none');
+        inBasketSpan.textContent = orderItem.count
+    } else {
+        addToBasket.classList.remove('none');
+        addToCardBox.classList.add('none');
+        inBasketP.classList.add('none');
+
+        if (countInput) {
+            countInput.value = 1
+        }
+    }
+}
+
+const changeProductCount = (productId, count) => {
+    const normalizedCount = parseInt(count, 10)
+
+    if (normalizedCount <= 0) {
+        forAsync = forAsync.filter(item => item.id !== productId)
+    } else {
+        forAsync = forAsync.map(item => {
+            if (item.id === productId) {
+                return {...item, count: normalizedCount}
+            }
+
+            return item
+        })
+    }
+
+    saveOrder();
+    setProductCardState(productId);
+    setSingleProductState(forAsync);
+}
+
 const setFeatures = () => {
     const data = getSavedOrder()
-    if(data.length ) {
-        forAsync = data;
-        setCartCount(forAsync);
+    forAsync = data;
+    setCartCount(forAsync);
 
+    if(data.length ) {
         setCard(forAsync)
         setSingleProductState(forAsync)
-
-    }   
+    }
 
 }
 
@@ -126,7 +194,8 @@ const onToCart = () => {
             addToCardBox.classList.add('none')
             buyBtn.classList.add('none')
             inBasketP.classList.remove('none')
-            inBasketSpan.textContent = count
+            const orderItem = forAsync.find(item => item.id === productForOrder.id)
+            inBasketSpan.textContent = orderItem ? orderItem.count : count
 
             countInput.value = 1
             
@@ -197,6 +266,38 @@ const setSingleProductState = (order) => {
     }
 }
 
+const onCardBasketControls = () => {
+    card.forEach(cardItem => {
+        const product = cardItem.querySelector('.product-item')
+        const inBasketP = cardItem.querySelector('.in-basket-p')
+
+        if (!product || !inBasketP) {
+            return
+        }
+
+        inBasketP.addEventListener('click', (event) => {
+            const productId = product.getAttribute('id')
+            const orderItem = getProductOrderItem(productId)
+
+            if (!orderItem) {
+                return
+            }
+
+            if (event.target.closest('.in-basket-p__plus')) {
+                changeProductCount(productId, Number(orderItem.count) + 1)
+            }
+
+            if (event.target.closest('.in-basket-p__minus')) {
+                changeProductCount(productId, Number(orderItem.count) - 1)
+            }
+
+            if (event.target.closest('.in-basket-p__clear')) {
+                changeProductCount(productId, 0)
+            }
+        })
+    })
+}
+
 const onSingleProductToCart = () => {
     if (!singleFizProduct) {
         return
@@ -234,4 +335,5 @@ setFeatures();
 onBuyClick();
 onRefresh();
 onToCart();
+onCardBasketControls();
 onSingleProductToCart();
