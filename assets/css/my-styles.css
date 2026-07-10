@@ -3474,6 +3474,8 @@
 #home .fiz-product-card .product-item-cover {
     position: relative;
     z-index: 1;
+    flex: 0 0 auto;
+    min-height: 286px;
     padding: 22px 24px 18px;
 }
 
@@ -3512,7 +3514,8 @@
 #home .prod-info.my-prod-info {
     position: relative;
     z-index: 1;
-    margin: auto 24px 24px;
+    flex: 1 1 auto;
+    margin: 0 24px 24px;
     padding: 16px 0 0;
     border-top: 1px solid rgba(30, 44, 70, .08);
     background: transparent;
@@ -3527,6 +3530,10 @@
 }
 
 @media (max-width: 575px) {
+    #home .fiz-product-card .product-item-cover {
+        min-height: 0;
+    }
+
     #home .product-card-calc-link {
         padding-right: 9px;
         font-size: 11px;
