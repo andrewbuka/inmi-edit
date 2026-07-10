@@ -327,7 +327,7 @@
 
 			submitButton.addEventListener('click', calculateProductAmount);
 
-			document.querySelectorAll('.prod-yur-calc-box .btn, .fiz-calc-box .btn').forEach(function (button) {
+			document.querySelectorAll('.prod-yur-calc-box .btn, .fiz-calc-box .btn, .fiz-calc-open').forEach(function (button) {
 				button.classList.add('yur-calc-open');
 				button.setAttribute('type', 'button');
 				button.addEventListener('click', function (event) {
