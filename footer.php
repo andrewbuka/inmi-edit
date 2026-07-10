@@ -68,11 +68,16 @@
 	</footer>
 	<!--================== FOOTER END ==================-->
 
-	<!--===================== TO TOP =====================-->
-	<a class="to-top" href="#home">
-		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-	</a>
-	<!--=================== TO TOP END ===================-->
+	<!--===================== FLOATING ACTIONS =====================-->
+	<div class="floating-actions" aria-label="Быстрые действия">
+		<a class="floating-cart header-like header-cart" href="http://inmi/basket" aria-label="Перейти в корзину">
+			<i class="fa fa-shopping-cart" aria-hidden="true"><span class="count-prod">0</span></i>
+		</a>
+		<a class="to-top" href="#home" aria-label="Наверх">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</a>
+	</div>
+	<!--=================== FLOATING ACTIONS END ===================-->
 	<!--==================== SCRIPT	====================-->
 	
 

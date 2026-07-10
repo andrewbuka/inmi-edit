@@ -3544,3 +3544,76 @@
         margin-top: 54px;
     }
 }
+
+/* Floating cart button next to the to-top action */
+.floating-actions {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 22;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.floating-actions .to-top,
+.floating-actions .floating-cart {
+    position: static;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #192330;
+    border-radius: 0;
+    background-color: #192330;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font-size: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+}
+
+.floating-actions .floating-cart i,
+.floating-actions .to-top i {
+    position: relative;
+    margin: 0;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.floating-actions .floating-cart .count-prod {
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #246e49;
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.floating-actions .to-top.active,
+.floating-actions .floating-cart.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.floating-actions .floating-cart:hover,
+.floating-actions .to-top:hover {
+    border-color: #246e49;
+    background-color: #246e49;
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .floating-actions .to-top,
+    .floating-actions .floating-cart {
+        display: flex;
+    }
+}

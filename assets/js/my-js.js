@@ -1,7 +1,7 @@
 const btnBuy = document.querySelectorAll('.btn-buy')
 const refreshProd = document.querySelectorAll('.refresh-prod')
 const toCart = document.querySelectorAll('.btn-to-card')
-const prodCount = document.querySelector('.count-prod')
+const prodCounts = document.querySelectorAll('.count-prod')
 const singleFizProduct = document.querySelector('.single-fiz-product')
 
 const card = document.querySelectorAll('.prod-container')
@@ -135,7 +135,7 @@ const onToCart = () => {
 }
 
 const setCartCount = (products) => {
-    if (!prodCount) {
+    if (!prodCounts.length) {
         return
     }
 
@@ -144,7 +144,9 @@ const setCartCount = (products) => {
         count = count + prod.count
     })
 
-    prodCount.textContent = count
+    prodCounts.forEach(prodCount => {
+        prodCount.textContent = count
+    })
 }
 
 const setCard = (order) => {
