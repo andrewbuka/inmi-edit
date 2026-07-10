@@ -31,6 +31,11 @@
 	<?php if ( function_exists( 'inmi_output_structured_data' ) ) { inmi_output_structured_data( $inmi_seo_meta ); } ?>
 </head>
 
+<?php
+$inmi_current_template = basename( get_page_template() );
+$inmi_is_yur_page     = is_page( 'yur-page' ) || 'yur-page.php' === $inmi_current_template;
+$inmi_is_main_page    = ( is_front_page() || is_home() || is_page( 8 ) ) && ! $inmi_is_yur_page;
+?>
 <body id="home" class="inner-scroll">
 
 	<header class="header">
@@ -59,11 +64,22 @@
 				<nav class="nav-menu">
 					<ul class="nav-list">
 						<li>
-							<a href="<?php echo get_page_link(8); ?>">Главная</a>							
+							<a class="<?php echo $inmi_is_main_page ? 'header-nav-active' : ''; ?>" href="<?php echo get_page_link(8); ?>">Главная</a>
 						</li>
 						<li><a target="_blank" href="https://mbio.bas-net.by/">Сайт Института</a></li>
-						<li><a href="<?php echo get_page_link(8); ?>#fiz-prod">физ. лица</a></li>
-						<li><a href="http://inmi/yur-page/"><strong>Препараты для юр. лиц</strong></a></li>
+						<li><a class="<?php echo $inmi_is_main_page ? 'header-nav-active' : ''; ?>" href="<?php echo get_page_link(8); ?>#fiz-prod">физ. лица</a></li>
+						<li class="header-yur-nav-item">
+							<?php if ( $inmi_is_main_page ) : ?>
+								<span class="header-yur-hint" aria-hidden="true">
+									<span class="header-yur-hint__text">юр лица здесь</span>
+									<svg class="header-yur-hint__arrow" width="92" height="42" viewBox="0 0 92 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 8C25 1 45 5 59 17C68 25 72 33 84 33" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+										<path d="M77 26L85 33L75 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							<?php endif; ?>
+							<a class="<?php echo $inmi_is_yur_page ? 'header-nav-active' : ''; ?>" href="http://inmi/yur-page/"><strong>Препараты для юр. лиц</strong></a>
+						</li>
 						<li><a href="<?php echo get_page_link(8); ?>#contacts">Контакты</a></li>
 					</ul>
 				</nav>
