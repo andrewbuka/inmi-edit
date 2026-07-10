@@ -7,16 +7,16 @@
 	<aside class="yur-calc-panel" aria-hidden="true" aria-labelledby="yur-calc-title" role="dialog">
 		<div class="yur-calc-panel__header">
 			<div class="yur-calc-panel__header-content">
-				<p class="yur-calc-panel__eyebrow">Премиальный расчет INMI</p>
+				<p class="yur-calc-panel__eyebrow">InMi-калькулятор</p>
 				<h3 id="yur-calc-title" class="yur-calc-panel__title">Калькулятор расхода препарата</h3>
-				<p class="yur-calc-panel__subtitle">Подберите точный объем препарата под задачу за несколько шагов</p>
+				<p class="yur-calc-panel__subtitle">Для более точного расчета и консультаций звоните или пишите</p>
 			</div>
 			<button class="yur-calc-panel__close" type="button" aria-label="Закрыть калькулятор" data-yur-calc-close>&times;</button>
 		</div>
 		<div class="yur-calc-panel__body">
 			<div class="yur-calc-panel__benefits" aria-label="Преимущества калькулятора">
-				<span><b>01</b> Норма внесения</span>
-				<span><b>02</b> Точный расход</span>
+				<span><b>01</b> Выберите параметры</span>
+				<span><b>02</b> Узнайте расход</span>
 			</div>
 			<p class="yur-calc-panel__lead">Заполните параметры применения — калькулятор рассчитает ориентировочную потребность в препарате по выбранной культуре, объекту или способу внесения.</p>
 			<div class="yur-calc-fields" aria-label="Поля для расчета расхода препарата">
@@ -275,9 +275,15 @@
 		}
 
 		.yur-calc-choice input {
+			flex: 0 0 auto;
 			width: auto;
+			min-width: 0;
 			margin-top: 3px;
 			accent-color: #ffd910;
+		}
+
+		.yur-calc-choice span {
+			flex: 1 1 auto;
 		}
 
 		.yur-calc-message {
@@ -315,6 +321,7 @@
 
 		.yur-calc-panel__submit {
 			display: flex;
+			align-items: center;
 			justify-content: center;
 			width: 100%;
 			min-height: 58px;
