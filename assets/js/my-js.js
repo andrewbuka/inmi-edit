@@ -67,6 +67,38 @@ const saveOrder = () => {
     setCartCount(forAsync);
 }
 
+
+const createCardBasketBlock = (count = 1) => {
+    const inBasketP = document.createElement('span')
+    inBasketP.classList.add('in-basket-p')
+    inBasketP.innerHTML = `
+        <span class="in-basket-p__label">В корзине</span>
+        <span class="in-basket-p__controls" aria-label="Управление количеством товара в корзине">
+            <button type="button" class="in-basket-p__button in-basket-p__minus" aria-label="Уменьшить количество">−</button>
+            <span class="in-basket-p__count"><span class="in-basket-span">${count}</span> шт.</span>
+            <button type="button" class="in-basket-p__button in-basket-p__plus" aria-label="Увеличить количество">+</button>
+        </span>
+        <button type="button" class="in-basket-p__clear">Очистить</button>
+    `
+
+    return inBasketP
+}
+
+const getCardBasketBlock = (cardItem, count = 1) => {
+    let inBasketP = cardItem.querySelector('.in-basket-p')
+
+    if (!inBasketP) {
+        inBasketP = createCardBasketBlock(count)
+        const addToCardBox = cardItem.querySelector('.add-to-card-box')
+
+        if (addToCardBox) {
+            addToCardBox.insertAdjacentElement('beforebegin', inBasketP)
+        }
+    }
+
+    return inBasketP
+}
+
 const getProductCard = (productId) => {
     return Array.from(card).find(item => {
         const product = item.querySelector('.product-item')
@@ -87,22 +119,25 @@ const setProductCardState = (productId) => {
     const orderItem = getProductOrderItem(productId)
     const addToBasket = cardItem.querySelector('.btn-buy')
     const addToCardBox = cardItem.querySelector('.add-to-card-box')
-    const inBasketP = cardItem.querySelector('.in-basket-p')
-    const inBasketSpan = cardItem.querySelector('.in-basket-span')
     const countInput = cardItem.querySelector('.add-to-card-input')
 
     if (orderItem) {
+        const inBasketP = getCardBasketBlock(cardItem, orderItem.count)
+        const inBasketSpan = inBasketP.querySelector('.in-basket-span')
+
         addToBasket?.classList.add('none');
         addToCardBox?.classList.add('none');
-        inBasketP?.classList.remove('none');
+        inBasketP.classList.remove('none');
 
         if (inBasketSpan) {
             inBasketSpan.textContent = orderItem.count
         }
     } else {
+        const inBasketP = cardItem.querySelector('.in-basket-p')
+
         addToBasket?.classList.remove('none');
         addToCardBox?.classList.add('none');
-        inBasketP?.classList.add('none');
+        inBasketP?.remove();
 
         if (countInput) {
             countInput.value = 1
@@ -254,13 +289,15 @@ const setSingleProductState = (order) => {
 const onCardBasketControls = () => {
     card.forEach(cardItem => {
         const product = cardItem.querySelector('.product-item')
-        const inBasketP = cardItem.querySelector('.in-basket-p')
-
-        if (!product || !inBasketP) {
+        if (!product) {
             return
         }
 
-        inBasketP.addEventListener('click', (event) => {
+        cardItem.addEventListener('click', (event) => {
+            if (!event.target.closest('.in-basket-p')) {
+                return
+            }
+
             const productId = product.getAttribute('id')
             const orderItem = getProductOrderItem(productId)
 
