@@ -75,6 +75,33 @@
 		</div>
 	</section>
 
+	<section class="home-premium-strip" aria-label="Преимущества InMi">
+		<div class="container home-premium-strip__grid">
+			<div class="home-premium-card">
+				<span class="home-premium-card__icon">✓</span>
+				<div>
+					<strong>Научная экспертиза</strong>
+					<p>Препараты разработаны на базе микробиологических исследований и практических испытаний.</p>
+				</div>
+			</div>
+			<div class="home-premium-card">
+				<span class="home-premium-card__icon">BY</span>
+				<div>
+					<strong>Белорусское производство</strong>
+					<p>Контролируем качество партий и подбираем решения под реальные задачи хозяйств.</p>
+				</div>
+			</div>
+			<div class="home-premium-card">
+				<span class="home-premium-card__icon">i</span>
+				<div>
+					<strong>Профессиональная консультация</strong>
+					<p>Помогаем выбрать препарат, рассчитать расход и оформить заказ без лишних шагов.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 
 	<!--================== S-PRODUCTS ==================-->
