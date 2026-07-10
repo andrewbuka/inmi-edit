@@ -69,12 +69,12 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/laksilm-yur-page">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 							
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -93,11 +93,11 @@
 						<div class="prod-yur-more-box">
 							
 							<a href="http://inmi/laksilms-yur-page">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -115,11 +115,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/laksilms2-yur-page">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -141,13 +141,13 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/antoil-plus-page-org/">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 
 							
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -165,12 +165,12 @@
 							
 
 							<a href="http://inmi/antoil-yur-page/">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 							
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -190,12 +190,12 @@
 
 							<a href="http://inmi/pf-complex-yur-page/">
 								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 							
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -213,11 +213,11 @@
 							
 							<a href="http://inmi/bioneit-yur-page/">
 								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -234,11 +234,11 @@
 						<div class="prod-yur-more-box">
 							
 							<a href="http://inmi/biosef-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -255,11 +255,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/rodobel-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -278,11 +278,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/deammon-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -299,12 +299,12 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/cbo-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -321,11 +321,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/fenoform-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -340,11 +340,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/teamin-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -360,11 +360,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/biokit-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -387,11 +387,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/metalaktim-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -409,11 +409,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/alfalaktim-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -429,11 +429,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/rumibakt-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -451,11 +451,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/poltribak-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -471,11 +471,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/apifil-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -491,11 +491,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/poliekt-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -512,11 +512,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/liobakt-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -537,11 +537,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/cudamik-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -558,11 +558,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/gramisil-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -578,11 +578,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/gordebak-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -598,11 +598,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/polibakt-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -618,11 +618,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/risofos-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -637,11 +637,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/soariz-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -657,11 +657,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/maklor-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -677,11 +677,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/agromik-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -701,11 +701,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/baktopin-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -721,11 +721,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/biolinum-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -742,11 +742,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/flebiopin-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -762,11 +762,11 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/biotilia-yur-page/">								
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
@@ -789,12 +789,12 @@
                         </div>
 						<div class="prod-yur-more-box">
 							<a href="http://inmi/baktofish-yur-page">
-								<button type="submit" class="btn btn-form" style="color: #fff;"><span>Подробно</span></button>
+								<span class="btn btn-form yur-btn yur-btn--details">Подробно</span>
 							</a>
 							
 						</div>
                         <div class="prod-yur-calc-box" style="">
-							<button type="submit" class="btn btn-form"><span>Калькулятор расхода</span></button>
+							<button type="button" class="btn btn-form yur-btn yur-btn--calc"><span>Калькулятор расхода</span></button>
 							
 						</div>
 						
