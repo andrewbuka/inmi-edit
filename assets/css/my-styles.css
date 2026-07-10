@@ -3706,8 +3706,8 @@
     position: absolute;
     left: 50%;
     bottom: calc(100% + 4px);
-    width: 128px;
-    height: 58px;
+    width: 108px;
+    height: 50px;
     color: rgba(36, 110, 73, 0.72);
     pointer-events: none;
     transform: translateX(-50%);
@@ -3717,7 +3717,8 @@
 .header-yur-hint__text {
     position: absolute;
     top: 0;
-    left: 2px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 11px;
     line-height: 1.2;
     font-weight: 600;
@@ -3728,8 +3729,9 @@
 
 .header-yur-hint__arrow {
     position: absolute;
-    right: 6px;
+    left: 50%;
     bottom: 0;
+    transform: translateX(-50%);
 }
 
 @keyframes header-yur-hint-float {

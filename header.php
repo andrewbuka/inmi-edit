@@ -72,9 +72,9 @@ $inmi_is_main_page    = ( is_front_page() || is_home() || is_page( 8 ) ) && ! $i
 							<?php if ( $inmi_is_main_page ) : ?>
 								<span class="header-yur-hint" aria-hidden="true">
 									<span class="header-yur-hint__text">юр лица здесь</span>
-									<svg class="header-yur-hint__arrow" width="92" height="42" viewBox="0 0 92 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M4 8C25 1 45 5 59 17C68 25 72 33 84 33" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
-										<path d="M77 26L85 33L75 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg class="header-yur-hint__arrow" width="64" height="30" viewBox="0 0 64 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 6C18 2 31 4 42 12C49 17 52 23 58 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+										<path d="M52 17L59 23L51 27" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</span>
 							<?php endif; ?>
