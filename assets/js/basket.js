@@ -10,6 +10,16 @@ const totalSum = document.querySelector('.total-sum')
 
 const formatBasketSum = value => Number(value) || 0
 
+const getSavedBasketOrder = () => {
+    try {
+        return JSON.parse(localStorage.getItem('order')) || []
+    } catch (error) {
+        return []
+    }
+}
+
+const hasBasketPageMarkup = () => allProdBasket && emptyBasket && basketFull
+
 const updateProductTotal = prod => {
     const prodId = prod.getAttribute('id')
     const product = forAsyncBasket.find(item => item.id === prodId)
@@ -26,13 +36,17 @@ let forAsyncBasket = [];
 let isEdit = false;
 
 const getData = () => {
-    const data = JSON.parse(localStorage.getItem('order'));
-    if(data && data.length !== 0) {
+    const data = getSavedBasketOrder();
+    forAsyncBasket = data
+    setCartCountBasket(forAsyncBasket)
+
+    if (!hasBasketPageMarkup()) {
+        return
+    }
+
+    if(data.length !== 0) {
         emptyBasket.classList.add('none')
         basketFull.classList.remove('none')
-        forAsyncBasket = data
-        setCartCountBasket(forAsyncBasket)
-
         setBasket(forAsyncBasket)
     } else {
         emptyBasket.classList.remove('none')
@@ -50,17 +64,29 @@ const setCartCountBasket = (products) => {
         sum = sum + +prod.count*(+prod.price)
     })
 
-    prodCountBasket.textContent = count
-    subtotalSum.textContent = formatBasketSum(sum)
-    totalSum.textContent = formatBasketSum(sum)
+    if (prodCountBasket) {
+        prodCountBasket.textContent = count
+    }
 
-    if(!products.length) {
+    if (subtotalSum) {
+        subtotalSum.textContent = formatBasketSum(sum)
+    }
+
+    if (totalSum) {
+        totalSum.textContent = formatBasketSum(sum)
+    }
+
+    if(!products.length && hasBasketPageMarkup()) {
         emptyBasket.classList.remove('none')
         basketFull.classList.add('none')
     }
 }
 
 const setBasket = (products) => {
+    if (!allProdBasket) {
+        return
+    }
+
     allProdBasket.innerHTML = ''
 
     products.forEach(prod => {
