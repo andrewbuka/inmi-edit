@@ -92,14 +92,17 @@ const setProductCardState = (productId) => {
     const countInput = cardItem.querySelector('.add-to-card-input')
 
     if (orderItem) {
-        addToBasket.classList.add('none');
-        addToCardBox.classList.add('none');
-        inBasketP.classList.remove('none');
-        inBasketSpan.textContent = orderItem.count
+        addToBasket?.classList.add('none');
+        addToCardBox?.classList.add('none');
+        inBasketP?.classList.remove('none');
+
+        if (inBasketSpan) {
+            inBasketSpan.textContent = orderItem.count
+        }
     } else {
-        addToBasket.classList.remove('none');
-        addToCardBox.classList.add('none');
-        inBasketP.classList.add('none');
+        addToBasket?.classList.remove('none');
+        addToCardBox?.classList.add('none');
+        inBasketP?.classList.add('none');
 
         if (countInput) {
             countInput.value = 1
@@ -148,7 +151,6 @@ const onBuyClick = () => {
             const addToCardBox = product.querySelector('.add-to-card-box');
 
             addToCardBox.classList.remove('none')
-            buyItem.classList.add('none')
         })
     })
 }
@@ -185,18 +187,7 @@ const onToCart = () => {
                 return
             }
 
-            const addToCardBox = product.querySelector('.add-to-card-box');
-            const buyBtn = product.querySelector('.btn-buy');
-            const inBasketP = product.querySelector('.in-basket-p')
-            const inBasketSpan = product.querySelector('.in-basket-span')
-            
-
-            addToCardBox.classList.add('none')
-            buyBtn.classList.add('none')
-            inBasketP.classList.remove('none')
-            const orderItem = forAsync.find(item => item.id === productForOrder.id)
-            inBasketSpan.textContent = orderItem ? orderItem.count : count
-
+            setProductCardState(productForOrder.id)
             countInput.value = 1
             
         })
@@ -223,15 +214,7 @@ const setCard = (order) => {
         const cardId = item.querySelector('.product-item').getAttribute('id')
         order.forEach(itemOrder => {
             if(cardId === itemOrder.id) {
-                const addToBasket = item.querySelector('.btn-buy')
-                const addToCardBox = item.querySelector('.add-to-card-box')
-                const inBasketP = item.querySelector('.in-basket-p')
-                 const inBasketSpan = item.querySelector('.in-basket-span')
-                addToBasket.classList.add('none');
-                addToCardBox.classList.add('none');
-                inBasketP.classList.remove('none');
-
-                inBasketSpan.textContent =itemOrder.count           
+                setProductCardState(itemOrder.id)
             }
         })
 
