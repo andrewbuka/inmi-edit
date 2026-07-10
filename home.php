@@ -140,6 +140,10 @@
 								<div class="product-item fiz-product-card" id="<?php the_field('id-prod') ?>">
 									<!-- <span class="top-sale">лидер продаж</span> -->
 									<div class="product-card-badge">Для физ. лиц</div>
+									<button type="button" class="fiz-calc-open product-card-calc-link" aria-label="Открыть калькулятор расхода для <?php echo esc_attr( get_the_title() ); ?>">
+										<span class="product-card-calc-link__icon">≈</span>
+										<span>Расход</span>
+									</button>
 
 									<a href="<?php the_field('fiz-prod-link') ?>" class="product-img fiz-product-img">
 										<img class="lazy" src="<?php the_field('card-img') ?>" data-src="<?php the_field('card-img') ?>" alt="product">
@@ -167,8 +171,8 @@
 											<div class="btn-to-card">Добавить в корзину</div>
 										</div>
 
-										<div class="fiz-calc-box ">
-											<button type="button" class="btn btn-form fiz-calc-open"><span>Калькулятор расхода</span></button>
+										<div class="fiz-card-service-note">
+											<span>Подберём норму и количество под вашу задачу</span>
 										</div>
 									</div>
 									<div class="prod-info my-prod-info">
