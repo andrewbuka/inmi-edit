@@ -39,7 +39,7 @@
 					<img style="max-width: 300px;" src="http://inmi/wp-content/uploads/2026/06/deamon-Photoroom.png" alt="img">
 					
 				</div>
-				<div class="col-12 col-md-3 single-shop-left my-single-shop-left">
+				<div class="col-12 col-md-3 single-shop-left my-single-shop-left single-yur-product">
 					<h2 class="title my-title"><?php the_title(); ?></h2>
 					<label class="my-label"><?php the_field('description'); ?></label>
 
@@ -55,8 +55,8 @@
 						</ul>
 					</div>
 				
-					<div >
-						<p class="">для заказа и консультаций:<br> <a href="tel:+375447507890">+375 (44) 750-78-90</a> / <a href="mailto:inmisale@mail.ru">inmisale@mail.ru</a></p>
+					<div class="single-yur-contact">
+						<p>для заказа и консультаций:<br> <a href="tel:+375447507890">+375 (44) 750-78-90</a> / <a href="mailto:inmisale@mail.ru">inmisale@mail.ru</a></p>
 					</div>
 
 				</div>
