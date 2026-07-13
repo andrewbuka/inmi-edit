@@ -56,16 +56,8 @@
 									<div class="slide-btn more-box"><a href="<?php the_field('slide-link') ?>">Подробнее</a></div>
 								<!-- <a href="#" class="btn"><span>buy now</span></a> -->
 							</div>
-							<div class="slide-img-cover">
-								<a href="#" class="lable-bike">
-									<div class="lable-bike-img"><img src="<?php the_field('cath-sign') ?>" alt="img"></div>
-									<div class="lable-bike-item">
-										<div class="model"><?php the_field('face-type') ?></div>
-										
-										<div class="price"></div>
-									</div>
-								</a>
-								<img src="<?php the_field('slide-img') ?>" alt="img" class="slide-img">
+							<div class="slide-img-cover" aria-label="Фото продукта">
+								<img src="<?php the_field('slide-img') ?>" alt="Фото продукта <?php echo esc_attr( get_the_title() ); ?>" class="slide-img">
 							</div>
 						</div>
 				</div>
