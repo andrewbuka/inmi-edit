@@ -4058,3 +4058,309 @@
 .single-fiz-purchase__controls .in-basket-p {
     grid-column: 1 / -1;
 }
+
+/* Modern footer aligned with the updated green glassmorphism design */
+.contact-card strong {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.contact-card-primary strong {
+    color: #ffffff;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.22);
+}
+
+.site-footer-modern {
+    position: relative;
+    overflow: hidden;
+    padding: 82px 0 34px;
+    background:
+        radial-gradient(circle at 12% 12%, rgba(255, 217, 16, 0.22), transparent 28%),
+        radial-gradient(circle at 88% 18%, rgba(102, 210, 138, 0.22), transparent 30%),
+        linear-gradient(135deg, #0b261b 0%, #174e33 48%, #246e49 100%);
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.site-footer-modern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 46%);
+    pointer-events: none;
+}
+
+.site-footer-modern .container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-modern-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+    gap: 26px;
+    align-items: stretch;
+}
+
+.footer-modern-brand,
+.footer-modern-card,
+.footer-modern-requisites {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(12px);
+}
+
+.footer-modern-brand {
+    padding: 38px;
+}
+
+.footer-modern-logo {
+    display: inline-flex;
+    width: 82px;
+    height: 82px;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.footer-modern-logo img {
+    display: block;
+    max-width: 58px;
+    max-height: 58px;
+}
+
+.footer-modern-kicker {
+    display: inline-flex;
+    margin: 0 0 14px;
+    padding: 7px 14px 5px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #d9f0df;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.footer-modern-brand h2 {
+    max-width: 780px;
+    margin: 0 0 18px;
+    color: #fff;
+    font-size: 38px;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    text-transform: none;
+}
+
+.footer-modern-brand p:not(.footer-modern-kicker) {
+    max-width: 660px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.footer-modern-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.footer-modern-btn,
+.footer-modern-link {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.footer-modern-btn {
+    padding: 0 24px;
+    background: #ffd910;
+    color: #173b2a;
+}
+
+.footer-modern-btn:hover {
+    background: #fff;
+    color: #173b2a;
+}
+
+.footer-modern-link {
+    padding: 0 22px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #fff;
+}
+
+.footer-modern-link:hover,
+.footer-modern-card a:hover,
+.footer-modern-bottom a:hover {
+    color: #ffd910;
+}
+
+.footer-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-modern-card {
+    padding: 28px;
+}
+
+.footer-modern-card h6 {
+    margin: 0 0 18px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+}
+
+.footer-modern-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-modern-contacts li,
+.footer-modern-menu li {
+    margin-bottom: 13px;
+}
+
+.footer-modern-contacts li:last-child,
+.footer-modern-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-modern-contacts span {
+    display: block;
+    margin-bottom: 4px;
+    color: #bde2c8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer-modern-card a,
+.footer-modern-card p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.footer-modern-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-modern-socials li a {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.footer-modern-requisites {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+    padding: 22px 28px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.footer-modern-requisites strong {
+    color: #fff;
+}
+
+.footer-modern-bottom {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.footer-modern-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+}
+
+.footer-modern-bottom a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+@media (max-width: 991px) {
+    .footer-modern-top,
+    .footer-modern-grid,
+    .footer-modern-requisites {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-modern-brand h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .site-footer-modern {
+        padding: 60px 0 28px;
+    }
+
+    .footer-modern-brand,
+    .footer-modern-card,
+    .footer-modern-requisites {
+        border-radius: 22px;
+    }
+
+    .footer-modern-brand,
+    .footer-modern-card {
+        padding: 24px 20px;
+    }
+
+    .footer-modern-brand h2 {
+        font-size: 27px;
+    }
+
+    .footer-modern-actions,
+    .footer-modern-bottom {
+        display: block;
+    }
+
+    .footer-modern-link {
+        margin-top: 10px;
+    }
+
+    .footer-modern-btn,
+    .footer-modern-link {
+        width: 100%;
+    }
+
+    .footer-modern-bottom a {
+        display: inline-block;
+        margin-top: 12px;
+    }
+}
