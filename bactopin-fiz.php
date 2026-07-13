@@ -29,7 +29,7 @@
 					
 					</span>
 
-					<div class="fiz-calc-box single-fiz-calc-box" style="margin-top: 10px;">
+					<div class="fiz-calc-box single-fiz-calc-box">
 						<button type="button" class="btn btn-form fiz-calc-open"><span>Калькулятор расхода</span></button>
 					</div>
 				</div>
@@ -54,9 +54,12 @@
 						</ul>
 					</div>
 				
-					<div >
-						<input type="number" style="padding: 10px 10px; max-width: 70px;" value="1" class="input-insingle-prod">
-						<a href="#" class="btn btn-wishlist"><span>В корзину</span></a>
+					<div class="single-fiz-purchase">
+						<label class="single-fiz-purchase__label" for="product-count-<?php echo esc_attr( get_the_ID() ); ?>">Количество</label>
+						<div class="single-fiz-purchase__controls">
+							<input id="product-count-<?php echo esc_attr( get_the_ID() ); ?>" type="number" min="1" value="1" class="input-insingle-prod">
+							<a href="#" class="btn btn-wishlist"><span>В корзину</span></a>
+						</div>
 					</div>
 
 				
@@ -74,8 +77,8 @@
 			<div class="tab-wrap">
 				<ul class="tab-nav product-tabs">
 					<li class="item" rel="tab1"><span>Характеристика</span></li>
-					<li class="item" rel="tab2"><span>Документы</span></li>
-					<!-- <li class="item" rel="tab3"><span>Документы</span></li> -->
+					<li class="item" rel="tab2"><span>Инструкция</span></li>
+					<li class="item" rel="tab3"><span>Документы</span></li>
 				</ul>
 				<div class="tabs-content my-row">
 					<div class="tab tab1">
@@ -89,6 +92,11 @@
 					<div class="tab tab2">
 						<div class="faq-item">
 							<h5 class="title"><span><a href="<?php the_field('instruction-link'); ?>">Инструкция по применению - открыть и скачать</a></span></h5>
+						</div>
+					</div>
+
+					<div class="tab tab3">
+						<div class="faq-item">
 							<h5 class="title"><span>Нормативно-технический документ - <i>ТУ BY 100289066.145-2018</i></span></h5>
 					</div>
 				</div>
