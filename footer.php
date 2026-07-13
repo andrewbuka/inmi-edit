@@ -1,68 +1,70 @@
 <!--==================== FOOTER ====================-->
-	<footer>
+	<footer class="site-footer-modern">
 		<div class="container">
-			<div class="row footer-item-cover">
-				<div class="footer-subscribe col-md-7 col-lg-8">
-					<h6>Подписка</h6>
-					<p>Подпишитесь на новостную рассылку от <span style="background: rgba(255, 217, 16, 0.6);">inmi.by</span> </p>
-					<form class="subscribe-form">
-						<i class="fa fa-at" aria-hidden="true"></i>
-						<input class="inp-form" type="email" name="subscribe" placeholder="E-mail">
-						<button type="submit" class="btn btn-form"><span>Готово</span></button>
-					</form>
+			<div class="footer-modern-top">
+				<div class="footer-modern-brand">
+					<a class="footer-modern-logo" href="<?php echo esc_url( get_page_link( 8 ) ); ?>" aria-label="INMI — на главную">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-white.svg' ); ?>" alt="INMI">
+					</a>
+					<p class="footer-modern-kicker">Институт микробиологии НАН Беларуси</p>
+					<h2>Биопрепараты для сельского хозяйства, экологии и производства</h2>
+					<p>Подберём решение под вашу задачу, рассчитаем расход и поможем оформить заказ для физических и юридических лиц.</p>
+					<div class="footer-modern-actions">
+						<a class="footer-modern-btn" href="tel:+375447507890">Позвонить</a>
+						<a class="footer-modern-link" href="mailto:inmisale@mail.ru">Написать на почту</a>
+					</div>
 				</div>
-				<div class="footer-item col-md-5 col-lg-4">
-					<h6>Главное</h6>
-					<ul class="footer-list">
-						<li><a href="http://inmi/requisites/">Реквезиты</a></li>
-						<li><a href="http://inmi/">Главная</a></li>
-						<li><a href="http://inmi/buying/">Как совершить покупку</a></li>
-						<li><a href="http://inmi/yur-page/">Для юр лиц</a></li>	
-						<li><a href="http://inmi/payment/">Оплата онлайн</a></li>											
-						<li><a href="<?php echo get_page_link(8); ?>#fiz-prod">Для физ лиц</a></li>
-						<li><a href="#">Карта сайта</a></li>	
-						
-											
-					</ul>
-				</div>
-			</div>
-			<div class="row footer-item-cover">
-				<div class="footer-touch col-md-7 col-lg-8">
-					<h6>Оставайтесь на связи</h6>
-					<ul class="footer-soc social-list">
-						<li><a target="_blank" href="https://invite.viber.com/?g2=AQBraLupPo8rSk2YPoN%2Bzo70k8QbxSBkOzKJG%2BMsZDnRDZS2JDAB2O%2FKSmRkYEkg&lang=ru"><i class="bi bi-tiktok" aria-hidden="true">Viber</i></a></li>
-						<li><a target="_blank" href="https://t.me/inmi_by"><i class="bi bi-tiktok" aria-hidden="true">Telegram</i></a></li>
-						<li><a target="_blank" href="https://www.tiktok.com/@inmi.by"><i class="bi bi-tiktok" aria-hidden="true">TikTok</i></a></li>						
-						<li><a target="_blank" href="https://www.youtube.com/channel/UCRaPXjE_UVRXqRUXNbFH-ww"><i class="bi bi-tiktok" aria-hidden="true">YouTube</i></a></li>
-					</ul>
-					<div class="footer-autor">Остались вопросы? напишите нам: <a href="mailto:inmisale@mail.ru">inmisale@mail.ru</a></div>
-				</div>
-				<div class="footer-item col-md-5 col-lg-4">
-					<h6>Реквизиты:</h6>
-					<ul class="footer-list">
-						
-Государственное научное учреждение "Институт микробиологии Национальной академии наук Беларуси"
-Юридический адрес: 220084, ул. Купревича,2
-Минск, Республика Беларусь,
-УНП - 100289066
 
-В Едином государственном реестре юридических лиц и индивидуальных предпринимателей за №100289066, 15.08.2000, Мингорисполком.
-						<!-- <li><a href="#">Road Bike</a></li>
-						<li><a href="#">City Bike</a></li>
-						<li><a href="#">Mountain Bike</a></li>
-						<li><a href="#">Kids Bike</a></li>
-						<li><a href="#">BMX Bike</a></li> -->
+				<div class="footer-modern-card footer-modern-contacts">
+					<h6>Контакты</h6>
+					<ul>
+						<li><span>Телефон</span><a href="tel:+375447507890">+375 (44) 750-78-90</a></li>
+						<li><span>Email</span><a href="mailto:inmisale@mail.ru">inmisale@mail.ru</a></li>
+						<li><span>Адрес</span><p>220084, г. Минск, ул. Академика Купревича, 2</p></li>
 					</ul>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="footer-copyright"><p>&copy; 2026 Институт микробиологии НАН Беларуси. Все права защищены.</p></div>
-				<ul class="footer-pay">
-					<!-- <li><a href="#"><img src="assets/img/footer-pay-1.png" alt="img"></a></li>
-					<li><a href="#"><img src="assets/img/footer-pay-2.png" alt="img"></a></li>
-					<li><a href="#"><img src="assets/img/footer-pay-3.png" alt="img"></a></li>
-					<li><a href="#"><img src="assets/img/footer-pay-4.png" alt="img"></a></li> -->
-				</ul>
+
+			<div class="footer-modern-grid">
+				<div class="footer-modern-card">
+					<h6>Навигация</h6>
+					<ul class="footer-modern-menu">
+						<li><a href="<?php echo esc_url( get_page_link( 8 ) ); ?>">Главная</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 8 ) ); ?>#fiz-prod">Для физ. лиц</a></li>
+						<li><a href="http://inmi/yur-page/">Для юр. лиц</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 8 ) ); ?>#contacts">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-modern-card">
+					<h6>Покупателям</h6>
+					<ul class="footer-modern-menu">
+						<li><a href="http://inmi/buying/">Как совершить покупку</a></li>
+						<li><a href="http://inmi/payment/">Оплата онлайн</a></li>
+						<li><a href="http://inmi/basket/">Корзина</a></li>
+						<li><a href="http://inmi/requisites/">Реквизиты</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-modern-card">
+					<h6>Соцсети</h6>
+					<ul class="footer-modern-socials">
+						<li><a target="_blank" rel="noopener" href="https://invite.viber.com/?g2=AQBraLupPo8rSk2YPoN%2Bzo70k8QbxSBkOzKJG%2BMsZDnRDZS2JDAB2O%2FKSmRkYEkg&lang=ru">Viber</a></li>
+						<li><a target="_blank" rel="noopener" href="https://t.me/inmi_by">Telegram</a></li>
+						<li><a target="_blank" rel="noopener" href="https://www.tiktok.com/@inmi.by">TikTok</a></li>
+						<li><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCRaPXjE_UVRXqRUXNbFH-ww">YouTube</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-modern-requisites">
+				<strong>ГНУ «Институт микробиологии Национальной академии наук Беларуси»</strong>
+				<span>УНП 100289066 · В Едином государственном реестре юридических лиц и индивидуальных предпринимателей за №100289066, 15.08.2000, Мингорисполком.</span>
+			</div>
+
+			<div class="footer-modern-bottom">
+				<p>&copy; 2026 Институт микробиологии НАН Беларуси. Все права защищены.</p>
+				<a href="https://mbio.bas-net.by/" target="_blank" rel="noopener">Сайт Института</a>
 			</div>
 		</div>
 	</footer>
