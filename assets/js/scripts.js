@@ -14,7 +14,35 @@
 
 		/* ----------------- SLIDER HOME ONE ---------------- */
 		if($('.main-slider')[0]){
-			$('.main-slider').slick({
+			var setMainSlideCoverHeight = function(){
+				$('.main-slider .main-slide').each(function(){
+					var $slide = $(this);
+					var infoHeight = $slide.find('.main-slide-info').outerHeight();
+
+					if (infoHeight) {
+						var coverScale = Math.min(Math.max(infoHeight / 620, 0.68), 1);
+
+						$slide.css('--main-slide-info-height', infoHeight + 'px');
+						$slide.css('--slide-img-cover-pad-top', Math.round(112 * coverScale) + 'px');
+						$slide.css('--slide-img-cover-pad-x', Math.round(52 * coverScale) + 'px');
+						$slide.css('--slide-img-cover-pad-bottom', Math.round(58 * coverScale) + 'px');
+						$slide.css('--slide-img-cover-shadow-bottom', Math.round(48 * coverScale) + 'px');
+						$slide.css('--slide-label-offset', Math.round(24 * coverScale) + 'px');
+						$slide.css('--slide-label-min-height', Math.round(76 * coverScale) + 'px');
+						$slide.css('--slide-label-radius', Math.round(26 * coverScale) + 'px');
+						$slide.css('--slide-label-divider-left', Math.round(82 * coverScale) + 'px');
+						$slide.css('--slide-label-divider-inset', Math.round(16 * coverScale) + 'px');
+						$slide.css('--slide-label-img-width', Math.round(82 * coverScale) + 'px');
+						$slide.css('--slide-label-img-padding', Math.round(15 * coverScale) + 'px');
+						$slide.css('--slide-label-content-pad-y', Math.round(15 * coverScale) + 'px');
+						$slide.css('--slide-label-content-pad-x', Math.round(24 * coverScale) + 'px');
+					}
+				});
+			};
+
+			$('.main-slider')
+				.on('init reInit setPosition afterChange', setMainSlideCoverHeight)
+				.slick({
 				infinite: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -41,6 +69,17 @@
 				}
 				]
 			});
+
+			setMainSlideCoverHeight();
+			$(window).on('resize.mainSlideCoverHeight orientationchange.mainSlideCoverHeight', setMainSlideCoverHeight);
+
+			if ('ResizeObserver' in window) {
+				var mainSlideInfoObserver = new ResizeObserver(setMainSlideCoverHeight);
+
+				$('.main-slider .main-slide-info').each(function(){
+					mainSlideInfoObserver.observe(this);
+				});
+			}
 		}
 
 		/* ----------------- SLIDER HOME TWO ---------------- */
