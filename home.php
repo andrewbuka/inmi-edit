@@ -271,6 +271,10 @@
 					<p class="contacts-eyebrow">Связаться с нами</p>
 					<h2 class="title contacts-title"><span>Контакты</span></h2>
 					<p class="contacts-lead">Подскажем, какой биопрепарат подойдет под вашу задачу, рассчитаем расход и поможем оформить заказ или запрос для сотрудничества.</p>
+					<div class="contacts-status" aria-label="Статус консультации">
+						<span class="contacts-status__dot" aria-hidden="true"></span>
+						<span>Консультация специалиста по подбору биопрепаратов</span>
+					</div>
 				</div>
 
 				<div class="contacts-list">
@@ -302,6 +306,11 @@
 					</div>
 				</div>
 
+				<div class="contacts-actions" aria-label="Быстрые действия">
+					<a class="contacts-action contacts-action-primary" href="tel:+375447507890">Позвонить</a>
+					<a class="contacts-action" href="mailto:inmisale@mail.ru">Написать на email</a>
+				</div>
+
 				<div class="contacts-schedule">
 					<span class="contact-card-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
 					<div>
@@ -323,6 +332,10 @@
 						<p>Институт микробиологии НАН Беларуси</p>
 					</div>
 					<a class="contacts-map-link" href="https://www.google.com/maps/search/?api=1&query=%D0%B3.+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA,+%D1%83%D0%BB.+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0+%D0%9A%D1%83%D0%BF%D1%80%D0%B5%D0%B2%D0%B8%D1%87%D0%B0,+2" target="_blank" rel="noopener">Открыть маршрут</a>
+				</div>
+				<div class="contacts-map-badge" aria-label="Адрес офиса">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<span>Минск, ул. Академика Купревича, 2</span>
 				</div>
 				<div class="contacts-map-frame">
 					<iframe title="Институт микробиологии НАН Беларуси на карте" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18794.367081731318!2d27.683449!3d53.926487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcebb4d6f6d2b%3A0x1c24ca875beb668c!2z0JjQvdGB0YLQuNGC0YPRgiDQvNC40LrRgNC-0LHQuNC-0LvQvtCz0LjQuCDQndCQ0J0g0JHQtdC70LDRgNGD0YHQuA!5e0!3m2!1sru!2sby!4v1737573509389!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
