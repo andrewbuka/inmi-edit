@@ -275,32 +275,37 @@
 		<span class="mask"></span>
 		<div class="container contacts-container">
 			<div class="contacts-panel wow fadeInLeftBlur lazy" data-wow-duration=".8s" data-wow-delay=".1s">
-				<p class="contacts-eyebrow">Связаться с нами</p>
-				<h2 class="title contacts-title"><span>Контакты</span></h2>
-				<p class="contacts-lead">Получите консультацию по препаратам, условиям заказа и сотрудничеству с Институтом микробиологии НАН Беларуси.</p>
+				<div class="contacts-heading">
+					<p class="contacts-eyebrow">Связаться с нами</p>
+					<h2 class="title contacts-title"><span>Контакты</span></h2>
+					<p class="contacts-lead">Подскажем, какой биопрепарат подойдет под вашу задачу, рассчитаем расход и поможем оформить заказ или запрос для сотрудничества.</p>
+				</div>
 
 				<div class="contacts-list">
-					<div class="contact-card">
+					<a class="contact-card contact-card-primary" href="tel:+375447507890">
 						<span class="contact-card-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-						<div>
+						<span class="contact-card-content">
 							<span class="contact-card-label">Телефон</span>
-							<a href="tel:+375447507890">+375 (44) 750-78-90</a>
-						</div>
-					</div>
+							<strong>+375 (44) 750-78-90</strong>
+							<small>Позвонить консультанту</small>
+						</span>
+					</a>
 
-					<div class="contact-card">
+					<a class="contact-card" href="mailto:inmisale@mail.ru">
 						<span class="contact-card-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-						<div>
+						<span class="contact-card-content">
 							<span class="contact-card-label">Email</span>
-							<a href="mailto:inmisale@mail.ru">inmisale@mail.ru</a>
-						</div>
-					</div>
+							<strong>inmisale@mail.ru</strong>
+							<small>Для заказов и консультаций</small>
+						</span>
+					</a>
 
 					<div class="contact-card">
 						<span class="contact-card-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-						<div>
+						<div class="contact-card-content">
 							<span class="contact-card-label">Адрес</span>
-							<span>г. Минск, ул. Академика Купревича, 2</span>
+							<strong>г. Минск, ул. Академика Купревича, 2</strong>
+							<small>Институт микробиологии НАН Беларуси</small>
 						</div>
 					</div>
 				</div>
@@ -309,9 +314,12 @@
 					<span class="contact-card-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
 					<div>
 						<span class="contact-card-label">График работы</span>
-						<p>Пн-Чт: 9:00 - 18:00, обед: 13:00 - 13:35</p>
-						<p>Пт: 9:00 - 15:55, обед: 13:00 - 13:35</p>
-						<p>Сб-Вс: выходной</p>
+						<ul class="contacts-schedule-list">
+							<li><span>Пн-Чт</span><strong>9:00 - 18:00</strong></li>
+							<li><span>Пт</span><strong>9:00 - 15:55</strong></li>
+							<li><span>Обед</span><strong>13:00 - 13:35</strong></li>
+						</ul>
+						<p>Суббота и воскресенье — выходные.</p>
 					</div>
 				</div>
 			</div>
