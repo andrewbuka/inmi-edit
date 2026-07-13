@@ -71,8 +71,8 @@
 			<div class="tab-wrap">
 				<ul class="tab-nav product-tabs">
 					<li class="item" rel="tab1"><span>Характеристика</span></li>
-					<li class="item" rel="tab2"><span>Документы</span></li>
-					<!-- <li class="item" rel="tab3"><span>Документы</span></li> -->
+					<li class="item" rel="tab2"><span>Инструкция</span></li>
+					<li class="item" rel="tab3"><span>Документы</span></li>
 				</ul>
 				<div class="tabs-content my-row">
 					<div class="tab tab1">
@@ -84,11 +84,16 @@
 					</div>
 					
 					<div class="tab tab2">
-						<div class="faq-item">						
+						<div class="faq-item">
 							<h5 class="title"><span><a target="_blank" href="http://inmi/wp-content/uploads/2026/06/ant_instr.pdf">Инструкция по применению - открыть и скачать</a></span></h5>
-							<h5 class="title"><span>Нормативно-технический документ - <i>ТУ РБ 100289066.103-2012</i></span></h5>
+						</div>
 					</div>
-				</div>
+
+					<div class="tab tab3">
+						<div class="faq-item">
+							<h5 class="title"><span>Нормативно-технический документ - <i>ТУ РБ 100289066.103-2012</i></span></h5>
+						</div>
+					</div>
 			</div>
 		</div>
 	</section>
