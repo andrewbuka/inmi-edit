@@ -199,65 +199,72 @@
 	<!--================== S-INMI-KNOWLEDGE ==================-->
 	<section id="inmi-knowledge" class="s-inmi-knowledge">
 		<div class="container">
-			<div class="knowledge-head wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".1s">
-				<div>
-					<p class="knowledge-eyebrow">Экспертная библиотека</p>
-					<h2 class="title knowledge-title">InMi-знания</h2>
-					<p class="knowledge-lead">Практические материалы о микробиологических решениях для растениеводства, животноводства, экологии и промышленной биотехнологии.</p>
+			<div class="knowledge-shell">
+				<div class="knowledge-head wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".1s">
+					<div class="knowledge-head__copy">
+						<p class="knowledge-eyebrow">Экспертная библиотека</p>
+						<h2 class="title knowledge-title">InMi-знания</h2>
+						<p class="knowledge-lead">Практические материалы о микробиологических решениях для растениеводства, животноводства, экологии и промышленной биотехнологии.</p>
+					</div>
+					<a class="knowledge-all-link" href="/inmi-knowledge/">Все статьи <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 				</div>
-				<a class="knowledge-all-link" href="/inmi-knowledge/">Все статьи <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-			</div>
 
-			<div class="knowledge-grid">
-				<article class="knowledge-card knowledge-card-featured wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".12s">
-					<a class="knowledge-card-link" href="/news-about-septik/" aria-label="Бактерии для септика: как запустить и восстановить работу автономной канализации">
-						<span class="knowledge-card-number">01</span>
-						<span class="knowledge-card-meta"><i class="fa fa-calendar" aria-hidden="true"></i> InMi-знания</span>
-						<h3>Экология и очистка стоков</h3>
-						<p>Бактерии для септика: как запустить и восстановить работу автономной канализации</p>
-						<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-					</a>
-				</article>
+				<div class="knowledge-layout">
+					<article class="knowledge-hero-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".12s">
+						<div class="knowledge-hero-card__content">
+							<span class="knowledge-card-meta"><i class="fa fa-flask" aria-hidden="true"></i> Подборка InMi</span>
+							<h3>Научные ответы на прикладные задачи</h3>
+							<p>Собираем в одном разделе короткие прикладные разборы: от запуска септика до обработки семян и сохранения кормов.</p>
+							<ul class="knowledge-stats" aria-label="Темы раздела InMi-знания">
+								<li><strong>5</strong><span>направлений</span></li>
+								<li><strong>∞</strong><span>практики</span></li>
+							</ul>
+							<a class="knowledge-hero-link" href="/inmi-knowledge/">Перейти в базу знаний <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</article>
 
-				<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".18s">
-					<a class="knowledge-card-link" href="/news-about-silos/" aria-label="Животноводство и корма">
-						<span class="knowledge-card-number">02</span>
-						<span class="knowledge-card-meta"><i class="fa fa-calendar" aria-hidden="true"></i> InMi-знания</span>
-						<h3>Животноводство и корма</h3>
-						<p>Как сохранить питательность силоса: причины порчи, потери сухого вещества и роль бактериальных заквасок</p>
-						<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-					</a>
-				</article>
+					<div class="knowledge-grid">
+						<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".16s">
+							<a class="knowledge-card-link" href="/news-about-septik/" aria-label="Бактерии для септика: как запустить и восстановить работу автономной канализации">
+								<span class="knowledge-card-icon"><i class="fa fa-tint" aria-hidden="true"></i></span>
+								<span class="knowledge-card-meta">Экология</span>
+								<h3>Очистка стоков</h3>
+								<p>Бактерии для септика: как запустить и восстановить работу автономной канализации.</p>
+								<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							</a>
+						</article>
 
-				<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".24s">
-					<a class="knowledge-card-link" href="/news-about-blueberry/" aria-label="Растениеводство">
-						<span class="knowledge-card-number">03</span>
-						<span class="knowledge-card-meta"><i class="fa fa-calendar" aria-hidden="true"></i> InMi-знания</span>
-						<h3>Факторы приживаемости голубики</h3>
-						<p>Голубика после посадки: как помочь саженцам адаптироваться и укрепить корневую систему</p>
-						<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-					</a>
-				</article>
+						<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".2s">
+							<a class="knowledge-card-link" href="/news-about-silos/" aria-label="Животноводство и корма">
+								<span class="knowledge-card-icon"><i class="fa fa-leaf" aria-hidden="true"></i></span>
+								<span class="knowledge-card-meta">Корма</span>
+								<h3>Питательность силоса</h3>
+								<p>Причины порчи, потери сухого вещества и роль бактериальных заквасок.</p>
+								<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							</a>
+						</article>
 
-				<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".3s">
-					<a class="knowledge-card-link" href="/news-about-soa/" aria-label="Инокуляция сои">
-						<span class="knowledge-card-number">04</span>
-						<span class="knowledge-card-meta"><i class="fa fa-calendar" aria-hidden="true"></i> InMi-знания</span>
-						<h3>Роль бактерий для сои</h3>
-						<p>Инокуляция сои: зачем обрабатывать семена и как получить эффективные клубеньки.</p>
-						<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-					</a>
-				</article>
+						<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".24s">
+							<a class="knowledge-card-link" href="/news-about-blueberry/" aria-label="Растениеводство">
+								<span class="knowledge-card-icon"><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+								<span class="knowledge-card-meta">Растениеводство</span>
+								<h3>Приживаемость голубики</h3>
+								<p>Как помочь саженцам адаптироваться и укрепить корневую систему.</p>
+								<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							</a>
+						</article>
 
-				<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".36s">
-					<a class="knowledge-card-link" href="/news-about-seed/" aria-label="Обработка семян озимой пшеницы">
-						<span class="knowledge-card-number">05</span>
-						<span class="knowledge-card-meta"><i class="fa fa-calendar" aria-hidden="true"></i> InMi-знания</span>
-						<h3>Обработка семян озимой пшеницы биопрепаратами</h3>
-						<p>Практический разбор предпосевной обработки: подготовка семян, выбор срока и оценка результата в поле.</p>
-						<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-					</a>
-				</article>
+						<article class="knowledge-card wow fadeInUp lazy" data-wow-duration=".8s" data-wow-delay=".28s">
+							<a class="knowledge-card-link" href="/news-about-soa/" aria-label="Инокуляция сои">
+								<span class="knowledge-card-icon"><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+								<span class="knowledge-card-meta">Соя</span>
+								<h3>Эффективные клубеньки</h3>
+								<p>Зачем обрабатывать семена и как оценить результат инокуляции.</p>
+								<span class="knowledge-read-more">Читать материал <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+							</a>
+						</article>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
