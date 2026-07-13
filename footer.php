@@ -4,7 +4,7 @@
 			<div class="footer-modern-top">
 				<div class="footer-modern-brand">
 					<a class="footer-modern-logo" href="<?php echo esc_url( get_page_link( 8 ) ); ?>" aria-label="INMI — на главную">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-white.svg' ); ?>" alt="INMI">
+						<img src="<?php echo esc_url( get_field( 'logo', 8 ) ); ?>" alt="INMI">
 					</a>
 					<p class="footer-modern-kicker">Институт микробиологии НАН Беларуси</p>
 					<h2>Биопрепараты для сельского хозяйства, экологии и производства</h2>
