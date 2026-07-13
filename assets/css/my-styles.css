@@ -3798,10 +3798,12 @@
     filter: drop-shadow(0 24px 34px rgba(20, 35, 70, .12));
 }
 
+.s-single-product.my-s-single-product .prod-yur-calc-box,
 .s-single-product.my-s-single-product .single-fiz-calc-box {
     margin-top: 16px;
 }
 
+.s-single-product.my-s-single-product .prod-yur-calc-box .btn.btn-form,
 .s-single-product.my-s-single-product .single-fiz-calc-box .btn.btn-form.fiz-calc-open {
     min-width: 0;
     padding: 12px 20px 10px;
@@ -3813,18 +3815,44 @@
     letter-spacing: .04em;
 }
 
+.s-single-product.my-s-single-product .prod-yur-calc-box .btn.btn-form:hover,
 .s-single-product.my-s-single-product .single-fiz-calc-box .btn.btn-form.fiz-calc-open:hover {
     border-color: rgba(36, 110, 73, .42);
     background: rgba(36, 110, 73, .14);
     color: #1f5f3f;
 }
 
+.single-shop-left.my-single-shop-left.single-yur-product,
 .single-shop-left.my-single-shop-left.single-fiz-product {
     padding: 26px;
     border: 1px solid rgba(30, 44, 70, .08);
     border-radius: 26px;
     background: rgba(255, 255, 255, .92);
     box-shadow: 0 24px 70px rgba(20, 35, 70, .12);
+}
+
+.single-yur-contact {
+    margin-top: 18px;
+    padding: 16px;
+    border: 1px solid rgba(36, 110, 73, .12);
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(36, 110, 73, .06), rgba(255, 217, 16, .08));
+}
+
+.single-yur-contact p {
+    margin: 0;
+    color: #66748a;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.single-yur-contact a {
+    color: #246e49;
+    font-weight: 800;
+}
+
+.single-yur-contact a:hover {
+    color: #1f5f3f;
 }
 
 .single-fiz-purchase {
@@ -3903,6 +3931,7 @@
 }
 
 @media (max-width: 767px) {
+    .single-shop-left.my-single-shop-left.single-yur-product,
     .single-shop-left.my-single-shop-left.single-fiz-product {
         padding: 22px 18px;
     }
